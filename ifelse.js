@@ -73,12 +73,12 @@ var assignGrade = function(score){
   };
 };
 
-document.write(assignGrade(93));
-document.write(assignGrade(88));
-document.write(assignGrade(73));
-document.write(assignGrade(53));
-document.write(assignGrade(83));
-document.write(assignGrade(99));
+document.write("<p>" + assignGrade(93) + "</p>");
+document.write("<p>" + assignGrade(88) + "</p>");
+document.write("<p>" + assignGrade(73) + "</p>");
+document.write("<p>" + assignGrade(53) + "</p>");
+document.write("<p>" + assignGrade(83) + "</p>");
+document.write("<p>" + assignGrade(99) + "</p>");
 
 
 // EXERCISE: The Pluralizer
@@ -90,7 +90,14 @@ document.write(assignGrade(99));
 // Bonus: Make it handle a few collective nouns like "sheep" and "geese".
 
 
+var pluralizer = function(noun, number){
+  if (number > 1)
+    return number + " " + noun + "s";
+  else
+    return number + " " + noun +  ".";
+};
 
-
-
+document.write("<p>" + pluralizer("cow", 5) + "</p>")
+document.write("<p>" + pluralizer("cow", 1) + "</p>")
+document.write("<p>" + pluralizer("bird", 5) + "</p>")
 
